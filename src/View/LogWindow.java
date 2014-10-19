@@ -32,6 +32,7 @@ public class LogWindow extends javax.swing.JFrame
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         logInPanel = new javax.swing.JPanel();
         registerLabel = new javax.swing.JLabel();
@@ -44,47 +45,47 @@ public class LogWindow extends javax.swing.JFrame
         jSeparator1 = new javax.swing.JSeparator();
         signInLabel = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
-        Menu_Bar = new javax.swing.JMenuBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("teloTengo Sign In");
         setBackground(new java.awt.Color(255, 255, 255));
-        setMinimumSize(new java.awt.Dimension(661, 594));
+        setBounds(new java.awt.Rectangle(0, 0, 1366, 768));
+        setMinimumSize(new java.awt.Dimension(1366, 768));
         setName("LogWindow"); // NOI18N
-        setResizable(false);
+        setPreferredSize(new java.awt.Dimension(1366, 768));
         getContentPane().setLayout(null);
 
         logInPanel.setBackground(new java.awt.Color(255, 255, 255));
-        logInPanel.setMinimumSize(new java.awt.Dimension(661, 594));
+        logInPanel.setMinimumSize(new java.awt.Dimension(1366, 768));
         logInPanel.setName("logInPanel"); // NOI18N
-        logInPanel.setPreferredSize(new java.awt.Dimension(661, 594));
+        logInPanel.setPreferredSize(new java.awt.Dimension(1366, 768));
         logInPanel.setLayout(null);
 
         registerLabel.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 14)); // NOI18N
         registerLabel.setText("If you don't have an acount");
         logInPanel.add(registerLabel);
-        registerLabel.setBounds(170, 400, 210, 20);
+        registerLabel.setBounds(550, 470, 210, 20);
 
         Label_Username.setBackground(new java.awt.Color(255, 255, 255));
         Label_Username.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         Label_Username.setText("Username:");
         logInPanel.add(Label_Username);
-        Label_Username.setBounds(170, 240, 70, 20);
+        Label_Username.setBounds(550, 310, 70, 20);
 
         TextField_Username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         logInPanel.add(TextField_Username);
-        TextField_Username.setBounds(250, 240, 230, 20);
+        TextField_Username.setBounds(630, 310, 230, 20);
 
         PasswordField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         logInPanel.add(PasswordField);
-        PasswordField.setBounds(250, 280, 230, 20);
+        PasswordField.setBounds(630, 350, 230, 20);
 
         Label_Password.setBackground(new java.awt.Color(255, 255, 255));
         Label_Password.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         Label_Password.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Label_Password.setText("Password:");
         logInPanel.add(Label_Password);
-        Label_Password.setBounds(170, 280, 70, 20);
+        Label_Password.setBounds(550, 350, 70, 20);
 
         Button_Register.setBackground(new java.awt.Color(255, 255, 255));
         Button_Register.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
@@ -93,6 +94,7 @@ public class LogWindow extends javax.swing.JFrame
         Button_Register.setAutoscrolls(true);
         Button_Register.setBorderPainted(false);
         Button_Register.setContentAreaFilled(false);
+        Button_Register.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Button_Register.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         Button_Register.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         Button_Register.addActionListener(new java.awt.event.ActionListener() {
@@ -101,7 +103,7 @@ public class LogWindow extends javax.swing.JFrame
             }
         });
         logInPanel.add(Button_Register);
-        Button_Register.setBounds(360, 400, 123, 20);
+        Button_Register.setBounds(740, 470, 123, 20);
 
         Button_Login.setBackground(new java.awt.Color(255, 255, 255));
         Button_Login.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
@@ -109,6 +111,7 @@ public class LogWindow extends javax.swing.JFrame
         Button_Login.setText("Login");
         Button_Login.setBorderPainted(false);
         Button_Login.setContentAreaFilled(false);
+        Button_Login.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Button_Login.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         Button_Login.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         Button_Login.setMargin(new java.awt.Insets(2, 14, 2, 0));
@@ -118,26 +121,24 @@ public class LogWindow extends javax.swing.JFrame
             }
         });
         logInPanel.add(Button_Login);
-        Button_Login.setBounds(420, 310, 60, 20);
+        Button_Login.setBounds(800, 380, 60, 20);
 
         jSeparator1.setForeground(new java.awt.Color(153, 204, 255));
         logInPanel.add(jSeparator1);
-        jSeparator1.setBounds(120, 390, 390, 10);
+        jSeparator1.setBounds(500, 460, 390, 10);
 
         signInLabel.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 24)); // NOI18N
         signInLabel.setForeground(new java.awt.Color(255, 153, 0));
         signInLabel.setText("Sign In");
         logInPanel.add(signInLabel);
-        signInLabel.setBounds(100, 190, 100, 30);
+        signInLabel.setBounds(480, 230, 100, 30);
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/teloTengo.png"))); // NOI18N
-        logo.setText("jLabel1");
         logInPanel.add(logo);
-        logo.setBounds(40, 20, 400, 130);
+        logo.setBounds(60, 30, 400, 130);
 
         getContentPane().add(logInPanel);
-        logInPanel.setBounds(0, 0, 661, 594);
-        setJMenuBar(Menu_Bar);
+        logInPanel.setBounds(0, 0, 1366, 768);
 
         getAccessibleContext().setAccessibleName("teloTengo");
 
@@ -158,7 +159,8 @@ public class LogWindow extends javax.swing.JFrame
             
             if (rol==1)//Si es administrador, abrir módulo administrador
             {          
-                        adminWindow = new AdminModWindow(TextField_Username.getText());            
+                        adminWindow = new AdminModWindow(TextField_Username.getText());
+                        signedIn = true;
                         adminWindow.setVisible(true);
                         this.dispose();                
             }
@@ -223,7 +225,6 @@ public class LogWindow extends javax.swing.JFrame
     private javax.swing.JButton Button_Register;
     private javax.swing.JLabel Label_Password;
     private javax.swing.JLabel Label_Username;
-    private javax.swing.JMenuBar Menu_Bar;
     private javax.swing.JPasswordField PasswordField;
     private javax.swing.JTextField TextField_Username;
     private javax.swing.JSeparator jSeparator1;
@@ -233,9 +234,8 @@ public class LogWindow extends javax.swing.JFrame
     private javax.swing.JLabel signInLabel;
     // End of variables declaration//GEN-END:variables
    AdminModWindow adminWindow = new AdminModWindow();
-   Principal principalWindow = new Principal(signedIn);
-   InventoryWindow invWindow = new InventoryWindow();
-   private static boolean signedIn;
-   private static int rol;
-
+   Principal principalWindow; 
+   InventoryWindow invWindow = new InventoryWindow(); 
+   private static boolean signedIn; //valida si el usuario está logeado en el sistema
+   private static int rol; //rol del usuario que se está logeando
 }

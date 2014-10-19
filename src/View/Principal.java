@@ -15,9 +15,19 @@ public class Principal extends javax.swing.JFrame {
     /**
      * Creates new form Principal
      */
-    public Principal(boolean signedIn) {
+    public Principal(boolean signedIn, String userName) {
         initComponents();
+        this.userName_Label.setVisible(false);
         this.signedIn=signedIn;
+        this.userName = userName;
+        
+        if (signedIn)
+        {
+            this.userName_Label.setText(userName);
+            this.userName_Label.setVisible(signedIn);            
+            
+        }
+      
     }
 
     /**
@@ -28,6 +38,7 @@ public class Principal extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         principalPanel = new javax.swing.JPanel();
         searchTextField = new javax.swing.JTextField();
@@ -38,11 +49,17 @@ public class Principal extends javax.swing.JFrame {
         userName_Label = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("teloTengo Home");
+        setMaximizedBounds(new java.awt.Rectangle(0, 0, 1366, 768));
+        setName("principal"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(1366, 768));
 
         principalPanel.setBackground(new java.awt.Color(255, 255, 255));
+        principalPanel.setAutoscrolls(true);
         principalPanel.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 11)); // NOI18N
-        principalPanel.setMinimumSize(new java.awt.Dimension(661, 594));
-        principalPanel.setLayout(null);
+        principalPanel.setMinimumSize(new java.awt.Dimension(0, 768));
+        principalPanel.setPreferredSize(new java.awt.Dimension(1366, 768));
+        principalPanel.setLayout(new java.awt.GridBagLayout());
 
         searchTextField.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         searchTextField.addActionListener(new java.awt.event.ActionListener() {
@@ -50,21 +67,35 @@ public class Principal extends javax.swing.JFrame {
                 searchTextFieldActionPerformed(evt);
             }
         });
-        principalPanel.add(searchTextField);
-        searchTextField.setBounds(40, 170, 460, 40);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.ipadx = 644;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(140, 330, 0, 0);
+        principalPanel.add(searchTextField, gridBagConstraints);
 
         searchButton.setBackground(new java.awt.Color(51, 51, 51));
         searchButton.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
         searchButton.setForeground(new java.awt.Color(51, 51, 51));
         searchButton.setText("GO");
         searchButton.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(102, 102, 102), 1, true));
+        searchButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         searchButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchButtonActionPerformed(evt);
             }
         });
-        principalPanel.add(searchButton);
-        searchButton.setBounds(500, 170, 40, 40);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.ipadx = 15;
+        gridBagConstraints.ipady = 19;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(140, 0, 0, 0);
+        principalPanel.add(searchButton, gridBagConstraints);
 
         adminMod_Button.setBackground(new java.awt.Color(255, 255, 255));
         adminMod_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
@@ -72,17 +103,30 @@ public class Principal extends javax.swing.JFrame {
         adminMod_Button.setText("Entrar al múdulo de Administración");
         adminMod_Button.setBorderPainted(false);
         adminMod_Button.setContentAreaFilled(false);
+        adminMod_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         adminMod_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 adminMod_ButtonActionPerformed(evt);
             }
         });
-        principalPanel.add(adminMod_Button);
-        adminMod_Button.setBounds(220, 570, 260, 23);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.ipadx = 17;
+        gridBagConstraints.ipady = -2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(370, 60, 35, 0);
+        principalPanel.add(adminMod_Button, gridBagConstraints);
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/teloTengo.png"))); // NOI18N
-        principalPanel.add(logo);
-        logo.setBounds(40, 20, 400, 130);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 4;
+        gridBagConstraints.ipady = -20;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 60, 0, 0);
+        principalPanel.add(logo, gridBagConstraints);
 
         miCuenta_Button.setBackground(new java.awt.Color(255, 255, 255));
         miCuenta_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 12)); // NOI18N
@@ -90,19 +134,36 @@ public class Principal extends javax.swing.JFrame {
         miCuenta_Button.setText("Mi Cuenta");
         miCuenta_Button.setBorderPainted(false);
         miCuenta_Button.setContentAreaFilled(false);
+        miCuenta_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        miCuenta_Button.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        miCuenta_Button.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        miCuenta_Button.setMargin(new java.awt.Insets(2, 0, 2, 0));
         miCuenta_Button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 miCuenta_ButtonActionPerformed(evt);
             }
         });
-        principalPanel.add(miCuenta_Button);
-        miCuenta_Button.setBounds(560, 0, 100, 30);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.ipadx = 5;
+        gridBagConstraints.ipady = 5;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 46);
+        principalPanel.add(miCuenta_Button, gridBagConstraints);
 
         userName_Label.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 12)); // NOI18N
         userName_Label.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        userName_Label.setText("texto");
         userName_Label.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
-        principalPanel.add(userName_Label);
-        userName_Label.setBounds(370, 0, 200, 30);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 4;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.ipadx = 171;
+        gridBagConstraints.ipady = 13;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 30, 0, 0);
+        principalPanel.add(userName_Label, gridBagConstraints);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -128,13 +189,16 @@ public class Principal extends javax.swing.JFrame {
 
     private void miCuenta_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_miCuenta_ButtonActionPerformed
         // TODO add your handling code here:
-      LogWindow logWindow = new LogWindow(2);
+      LogWindow logWindow = new LogWindow(1);
       logWindow.setVisible(true);
       this.dispose();
     }//GEN-LAST:event_miCuenta_ButtonActionPerformed
 
     private void adminMod_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_adminMod_ButtonActionPerformed
         // TODO add your handling code here:
+        LogWindow logWindow = new LogWindow(2);
+        logWindow.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_adminMod_ButtonActionPerformed
 
     /**
@@ -167,7 +231,7 @@ public class Principal extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Principal(signedIn).setVisible(true);
+                new Principal(signedIn,userName).setVisible(true);
             }
         });
     }
@@ -182,5 +246,6 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JLabel userName_Label;
     // End of variables declaration//GEN-END:variables
     private static boolean signedIn;
+    private static String userName;
 
 }
