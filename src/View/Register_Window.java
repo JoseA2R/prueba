@@ -25,10 +25,10 @@ public class Register_Window extends javax.swing.JFrame {
     
     private FileNameExtensionFilter filter = new FileNameExtensionFilter("Archivo de imagen","jpg");
     private final String defaultavatarpath= "src\\Resources\\DefaultAvatar.jpg";
-    private Date date;
-    private String rol;
+    private static int rol;
     
-    public Register_Window() {
+    public Register_Window(int rol) {        
+        this.rol=rol;
         initComponents();
         
         if (!(TextField_Name.getText().equals("")||TextField_LastName.getText().equals("")||TextField_Mail.getText().equals("")||TextField_Username.getText().equals("")))
@@ -312,7 +312,7 @@ public class Register_Window extends javax.swing.JFrame {
         String password = new String(password_original);
         int letra=0; 
         int num=0;
-
+        Date date = new Date();
         
         for (int i=0;i<password.length();i++)
         {
@@ -330,6 +330,7 @@ public class Register_Window extends javax.swing.JFrame {
         if ((num>=3)&&(letra>=3)){
             boolean reg = false;
         
+        //Se cumple la condición de la contraseña
         if (password.length()>=6 && !TextField_Name.getText().equals("") && !TextField_LastName.getText().equals("") && !TextField_Mail.getText().equals("") && !TextField_Username.getText().equals(""))
             reg=true;
         else
@@ -339,16 +340,13 @@ public class Register_Window extends javax.swing.JFrame {
          
         if (reg)
         {   
-            boolean register=User_Controller.regUser(TextField_Name.getText(), TextField_LastName.getText(),TextField_Id.getText(),TextField_Username.getText(),password,TextField_Mail.getText(), date, rol);
+            
+            boolean register=User_Controller.regUser(TextField_Name.getText(), TextField_LastName.getText(),TextField_Id.getText(),TextField_Username.getText(),password,TextField_Mail.getText(), date,rol);
             
             if (register)
             {
-                int rol;
-                
-                rol=User_Controller.getUser(TextField_Username.getText()).getRol();
-                
                 if(rol==1){ //Si rol es 1 el usuario es administrador
-                    AdminModWindow principal=new AdminModWindow(TextField_Name.getText());
+                    AdminModWindow principal=new AdminModWindow(TextField_Username.getText());
                     principal.setVisible(true);
                     this.dispose();
                 }
@@ -444,7 +442,7 @@ public class Register_Window extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Register_Window().setVisible(true);
+                new Register_Window(rol).setVisible(true);
             }
         });
     }

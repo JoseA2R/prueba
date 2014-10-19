@@ -177,7 +177,7 @@ public class LogWindow extends javax.swing.JFrame
 
     private void Button_RegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_RegisterActionPerformed
         // TODO add your handling code here:
-        Register_Window register = new Register_Window();
+        Register_Window register = new Register_Window(rol);
         register.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_Button_RegisterActionPerformed

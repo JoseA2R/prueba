@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package Model.AdminMod;
+package Controller;
 
 /**
  *
@@ -28,12 +28,12 @@ public class Util
     public static final String ERROR_USER_EMAIL_TAG= "Error loading User from XML - Error in the attribute " + USER_EMAIL_TAG + " of the XML tag";
     public static final String ERROR_USER_USERNAME_TAG= "Error loading User from XML - Error in the attribute " + USER_USERNAME_TAG + " of the XML tag";
     public static final String ERROR_USER_PASSWORD_TAG= "Error loading User from XML - Error in the attribute " + USER_PASSWORD_TAG + " of the XML tag";
-    public static final String ERROR_REGDATE_TAG= "Error loading User from XML - Error in the attribute " + USER_REGDATE_TAG + " of the XML tag";
+    public static final String ERROR_USER_REGDATE_TAG= "Error loading User from XML - Error in the attribute " + USER_REGDATE_TAG + " of the XML tag";
     public static final String ERROR_USER_ROL_TAG= "Error loading User from XML - Error in the attribute " + USER_ROL_TAG + " of the XML tag";
     
     public static final String ERROR_XML_EMPTY_FILE = "Error loading XML file - The file is empty";
     public static final String ERROR_XML_PROCESSING_FILE = "Error loading XML file - It's not possible processing the file";
     public static final String ERROR_XML_USER_ID_NOT_EXIST = "Error loading XML file - The professor don't exist";
     
-    public static final String USERS_XML_PATH = "src/Model/AdminMod/users.xml";
+    public static final String USERS_XML_PATH = "src\\Controller\\users.xml";
 }

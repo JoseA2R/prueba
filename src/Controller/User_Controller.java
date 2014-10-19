@@ -17,12 +17,14 @@ import java.util.Date;
  *
  * @author LaMitologica
  */
-public class User_Controller {
-    
+public class User_Controller{ 
+
+    private static UserXmlFile manageUserXmlFile = new UserXmlFile();
+        
     public static boolean IsUser (String Nick, String Password)
     {
         boolean isUser;
-        UserXmlFile manageUserXmlFile = new UserXmlFile();
+        
         
         try
         {
@@ -45,8 +47,12 @@ public class User_Controller {
     }
     
     public static boolean regUser(String name,String lastName,String iD,String userName,String pass,
-                           String email,Date regDate, String rol){
-        return true;
+                           String email,Date regDate, int rol){
+        User user = new User(name,lastName,iD,userName,pass,email,regDate,rol);
+        
+        boolean saved = manageUserXmlFile.saveUserInDataBase(user);
+        
+        return saved;
     }
     
 }

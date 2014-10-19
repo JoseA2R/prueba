@@ -61,7 +61,7 @@ public class User {
         this.lastName = lastName;
     }
 
-    public String getiD() {
+    public String getId() {
         return iD;
     }
 
