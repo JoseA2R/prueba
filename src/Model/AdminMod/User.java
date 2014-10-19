@@ -1,4 +1,4 @@
-package AdminMod;
+package Model.AdminMod;
 
 
 import java.util.Date;
@@ -21,9 +21,12 @@ public class User {
     private String pass;
     private String email;
     private Date regDate;
-    private String rol;    
+    private int rol;    
+    
+    public User(){
+    }
 
-    public User(String name, String lastName, String iD, String userName, String pass, String email, Date regDate, String rol) {
+    public User(String name, String lastName, String iD, String userName, String pass, String email, Date regDate, int rol) {
         this.name = name;
         this.lastName = lastName;
         this.iD = iD;
@@ -34,11 +37,11 @@ public class User {
         this.rol = rol;
     }
 
-    public String getRol() {
+    public int getRol() {
         return rol;
     }
 
-    public void setRol(String rol) {
+    public void setRol(int rol) {
         this.rol = rol;
     }
 

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package InvMod;
+package Model.InvMod;
 
 import javax.swing.ImageIcon;
 
