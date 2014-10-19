@@ -59,6 +59,7 @@ public class Register_Window extends javax.swing.JFrame {
         Label_Registration = new javax.swing.JLabel();
         Label_Id = new javax.swing.JLabel();
         TextField_Id = new javax.swing.JTextField();
+        logo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("teloTengo: Registration");
@@ -77,7 +78,7 @@ public class Register_Window extends javax.swing.JFrame {
         Label_Name.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Label_Name.setText("My name is:");
         regPanel.add(Label_Name);
-        Label_Name.setBounds(190, 170, 80, 20);
+        Label_Name.setBounds(190, 240, 80, 20);
 
         TextField_Name.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         TextField_Name.addActionListener(new java.awt.event.ActionListener() {
@@ -91,7 +92,7 @@ public class Register_Window extends javax.swing.JFrame {
             }
         });
         regPanel.add(TextField_Name);
-        TextField_Name.setBounds(280, 170, 230, 20);
+        TextField_Name.setBounds(280, 240, 230, 20);
 
         TextField_LastName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         TextField_LastName.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -100,19 +101,19 @@ public class Register_Window extends javax.swing.JFrame {
             }
         });
         regPanel.add(TextField_LastName);
-        TextField_LastName.setBounds(280, 210, 230, 20);
+        TextField_LastName.setBounds(280, 280, 230, 20);
 
         Label_Apellido.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         Label_Apellido.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Label_Apellido.setText("My Last Name is:");
         regPanel.add(Label_Apellido);
-        Label_Apellido.setBounds(150, 210, 130, 20);
+        Label_Apellido.setBounds(150, 280, 130, 20);
 
         Label_Mail.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         Label_Mail.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Label_Mail.setText("My email:");
         regPanel.add(Label_Mail);
-        Label_Mail.setBounds(200, 250, 80, 20);
+        Label_Mail.setBounds(200, 320, 80, 20);
 
         TextField_Mail.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         TextField_Mail.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -121,7 +122,7 @@ public class Register_Window extends javax.swing.JFrame {
             }
         });
         regPanel.add(TextField_Mail);
-        TextField_Mail.setBounds(280, 250, 230, 20);
+        TextField_Mail.setBounds(280, 320, 230, 20);
 
         TextField_Username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         TextField_Username.addActionListener(new java.awt.event.ActionListener() {
@@ -135,19 +136,19 @@ public class Register_Window extends javax.swing.JFrame {
             }
         });
         regPanel.add(TextField_Username);
-        TextField_Username.setBounds(280, 330, 230, 20);
+        TextField_Username.setBounds(280, 400, 230, 20);
 
         Label_Username.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         Label_Username.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Label_Username.setText("Pick an username:");
         regPanel.add(Label_Username);
-        Label_Username.setBounds(150, 330, 130, 20);
+        Label_Username.setBounds(150, 400, 130, 20);
 
         Label_Password.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         Label_Password.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Label_Password.setText("Password:");
         regPanel.add(Label_Password);
-        Label_Password.setBounds(200, 370, 80, 19);
+        Label_Password.setBounds(200, 440, 80, 19);
 
         Password_Field.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         Password_Field.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -156,7 +157,7 @@ public class Register_Window extends javax.swing.JFrame {
             }
         });
         regPanel.add(Password_Field);
-        Password_Field.setBounds(280, 370, 230, 20);
+        Password_Field.setBounds(280, 440, 230, 20);
 
         Button_Create.setBackground(new java.awt.Color(255, 255, 255));
         Button_Create.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
@@ -172,19 +173,19 @@ public class Register_Window extends javax.swing.JFrame {
             }
         });
         regPanel.add(Button_Create);
-        Button_Create.setBounds(360, 410, 150, 20);
+        Button_Create.setBounds(360, 480, 150, 20);
 
         Label_Registration.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 24)); // NOI18N
         Label_Registration.setForeground(new java.awt.Color(255, 153, 0));
         Label_Registration.setText("Registration ");
         regPanel.add(Label_Registration);
-        Label_Registration.setBounds(60, 70, 150, 40);
+        Label_Registration.setBounds(60, 170, 150, 40);
 
         Label_Id.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         Label_Id.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Label_Id.setText("Id or Passport:");
         regPanel.add(Label_Id);
-        Label_Id.setBounds(170, 290, 110, 20);
+        Label_Id.setBounds(170, 360, 110, 20);
 
         TextField_Id.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         TextField_Id.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -193,7 +194,12 @@ public class Register_Window extends javax.swing.JFrame {
             }
         });
         regPanel.add(TextField_Id);
-        TextField_Id.setBounds(280, 290, 230, 20);
+        TextField_Id.setBounds(280, 360, 230, 20);
+
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/teloTengo.png"))); // NOI18N
+        logo.setText("jLabel1");
+        regPanel.add(logo);
+        logo.setBounds(40, 20, 400, 130);
 
         getContentPane().add(regPanel);
         regPanel.setBounds(0, 0, 661, 594);
@@ -240,9 +246,15 @@ public class Register_Window extends javax.swing.JFrame {
             
             if (register)
             {
-                AdminModWindow principal=new AdminModWindow(TextField_Name.getText());
-                principal.setVisible(true);
-                this.dispose();
+                int rol;
+                
+                rol=User_Controller.getUser(TextField_Username.getText()).getRol();
+                
+                if(rol==1){ //Si rol es 1 el usuario es administrador
+                    AdminModWindow principal=new AdminModWindow(TextField_Name.getText());
+                    principal.setVisible(true);
+                    this.dispose();
+                }
             }
         }
         else
@@ -355,6 +367,7 @@ public class Register_Window extends javax.swing.JFrame {
     private javax.swing.JTextField TextField_Mail;
     private javax.swing.JTextField TextField_Name;
     private javax.swing.JTextField TextField_Username;
+    private javax.swing.JLabel logo;
     private javax.swing.JPanel regPanel;
     // End of variables declaration//GEN-END:variables
 }
