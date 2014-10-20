@@ -59,33 +59,67 @@ public class LogWindow extends javax.swing.JFrame
         logInPanel.setMinimumSize(new java.awt.Dimension(1366, 768));
         logInPanel.setName("logInPanel"); // NOI18N
         logInPanel.setPreferredSize(new java.awt.Dimension(1366, 768));
-        logInPanel.setLayout(null);
+        logInPanel.setLayout(new java.awt.GridBagLayout());
 
         registerLabel.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 14)); // NOI18N
         registerLabel.setText("If you don't have an acount");
-        logInPanel.add(registerLabel);
-        registerLabel.setBounds(550, 470, 210, 20);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 3;
+        gridBagConstraints.ipadx = 12;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 90, 278, 0);
+        logInPanel.add(registerLabel, gridBagConstraints);
 
         Label_Username.setBackground(new java.awt.Color(255, 255, 255));
         Label_Username.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         Label_Username.setText("Username:");
-        logInPanel.add(Label_Username);
-        Label_Username.setBounds(550, 310, 70, 20);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(50, 90, 0, 0);
+        logInPanel.add(Label_Username, gridBagConstraints);
 
         TextField_Username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        logInPanel.add(TextField_Username);
-        TextField_Username.setBounds(630, 310, 230, 20);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.ipadx = 224;
+        gridBagConstraints.ipady = -3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(50, 10, 0, 0);
+        logInPanel.add(TextField_Username, gridBagConstraints);
 
         PasswordField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        logInPanel.add(PasswordField);
-        PasswordField.setBounds(630, 350, 230, 20);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 4;
+        gridBagConstraints.ipadx = 224;
+        gridBagConstraints.ipady = -3;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 10, 0, 0);
+        logInPanel.add(PasswordField, gridBagConstraints);
 
         Label_Password.setBackground(new java.awt.Color(255, 255, 255));
         Label_Password.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
         Label_Password.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Label_Password.setText("Password:");
-        logInPanel.add(Label_Password);
-        Label_Password.setBounds(550, 350, 70, 20);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.ipadx = 5;
+        gridBagConstraints.ipady = 1;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(20, 90, 0, 0);
+        logInPanel.add(Label_Password, gridBagConstraints);
 
         Button_Register.setBackground(new java.awt.Color(255, 255, 255));
         Button_Register.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
@@ -102,8 +136,14 @@ public class LogWindow extends javax.swing.JFrame
                 Button_RegisterActionPerformed(evt);
             }
         });
-        logInPanel.add(Button_Register);
-        Button_Register.setBounds(740, 470, 123, 20);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 3;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.ipady = -7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(0, 120, 278, 0);
+        logInPanel.add(Button_Register, gridBagConstraints);
 
         Button_Login.setBackground(new java.awt.Color(255, 255, 255));
         Button_Login.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
@@ -120,22 +160,47 @@ public class LogWindow extends javax.swing.JFrame
                 Button_LoginActionPerformed(evt);
             }
         });
-        logInPanel.add(Button_Login);
-        Button_Login.setBounds(800, 380, 60, 20);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 6;
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.ipadx = 3;
+        gridBagConstraints.ipady = -7;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(10, 40, 0, 0);
+        logInPanel.add(Button_Login, gridBagConstraints);
 
         jSeparator1.setForeground(new java.awt.Color(153, 204, 255));
-        logInPanel.add(jSeparator1);
-        jSeparator1.setBounds(500, 460, 390, 10);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.ipadx = 389;
+        gridBagConstraints.ipady = 9;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(60, 40, 0, 476);
+        logInPanel.add(jSeparator1, gridBagConstraints);
 
         signInLabel.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 24)); // NOI18N
         signInLabel.setForeground(new java.awt.Color(255, 153, 0));
         signInLabel.setText("Sign In");
-        logInPanel.add(signInLabel);
-        signInLabel.setBounds(480, 230, 100, 30);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 1;
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.ipadx = 19;
+        gridBagConstraints.ipady = -2;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(70, 20, 0, 0);
+        logInPanel.add(signInLabel, gridBagConstraints);
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/teloTengo.png"))); // NOI18N
-        logInPanel.add(logo);
-        logo.setBounds(60, 30, 400, 130);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.ipadx = 4;
+        gridBagConstraints.ipady = -20;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(30, 60, 0, 0);
+        logInPanel.add(logo, gridBagConstraints);
 
         getContentPane().add(logInPanel);
         logInPanel.setBounds(0, 0, 1366, 768);

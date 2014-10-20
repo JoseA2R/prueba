@@ -103,7 +103,7 @@ public class Register_Window extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 224;
         gridBagConstraints.ipady = -3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(30, 0, 0, 476);
+        gridBagConstraints.insets = new java.awt.Insets(30, 0, 0, 478);
         regPanel.add(TextField_Name, gridBagConstraints);
 
         TextField_LastName.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -118,7 +118,7 @@ public class Register_Window extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 224;
         gridBagConstraints.ipady = -3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 476);
+        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 478);
         regPanel.add(TextField_LastName, gridBagConstraints);
 
         Label_Apellido.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
@@ -159,7 +159,7 @@ public class Register_Window extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 224;
         gridBagConstraints.ipady = -3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 476);
+        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 478);
         regPanel.add(TextField_Mail, gridBagConstraints);
 
         TextField_Username.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -179,7 +179,7 @@ public class Register_Window extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 224;
         gridBagConstraints.ipady = -3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 476);
+        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 478);
         regPanel.add(TextField_Username, gridBagConstraints);
 
         Label_Username.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
@@ -220,7 +220,7 @@ public class Register_Window extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 224;
         gridBagConstraints.ipady = -3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 476);
+        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 478);
         regPanel.add(Password_Field, gridBagConstraints);
 
         Button_Create.setBackground(new java.awt.Color(255, 255, 255));
@@ -244,10 +244,10 @@ public class Register_Window extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 27;
         gridBagConstraints.ipady = -7;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(20, 80, 208, 476);
+        gridBagConstraints.insets = new java.awt.Insets(20, 80, 208, 478);
         regPanel.add(Button_Create, gridBagConstraints);
 
-        Label_Registration.setFont(new java.awt.Font("Microsoft YaHei UI Light", 1, 24)); // NOI18N
+        Label_Registration.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 24)); // NOI18N
         Label_Registration.setForeground(new java.awt.Color(255, 153, 0));
         Label_Registration.setText("Registration ");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -257,7 +257,7 @@ public class Register_Window extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 1;
         gridBagConstraints.ipady = 8;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(70, 370, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(70, 372, 0, 0);
         regPanel.add(Label_Registration, gridBagConstraints);
 
         Label_Id.setFont(new java.awt.Font("Microsoft JhengHei UI", 0, 14)); // NOI18N
@@ -285,7 +285,7 @@ public class Register_Window extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 224;
         gridBagConstraints.ipady = -3;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 476);
+        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 478);
         regPanel.add(TextField_Id, gridBagConstraints);
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/teloTengo.png"))); // NOI18N
@@ -295,7 +295,7 @@ public class Register_Window extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 4;
         gridBagConstraints.ipady = -20;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(30, 60, 0, 0);
+        gridBagConstraints.insets = new java.awt.Insets(30, 62, 0, 0);
         regPanel.add(logo, gridBagConstraints);
 
         getContentPane().add(regPanel);

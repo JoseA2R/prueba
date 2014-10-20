@@ -6,6 +6,9 @@
 
 package View;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author LaMitologica
@@ -35,21 +38,146 @@ public class AdminModWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        adminModPanel = new javax.swing.JPanel();
+        logo = new javax.swing.JLabel();
+        Label_Gestion = new javax.swing.JLabel();
+        updateUser_Button = new javax.swing.JButton();
+        delUser_Button = new javax.swing.JButton();
+        ImageIcon icon = new ImageIcon(rutaButton);
+        Image img = icon.getImage();
+        Image newImg = img.getScaledInstance(400, 400, java.awt.Image.SCALE_SMOOTH);
+        ImageIcon newIcon = new ImageIcon(newImg);
+        this.regUser_Button.setIcon(newIcon);
+        this.regUser_Button.setSize(400, 400);
+        regUser_Button = new javax.swing.JButton();
+        conUser_Button = new javax.swing.JButton();
+        Button_Back = new javax.swing.JButton();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setTitle("teloTengo Módulo de Administración");
+        setBackground(new java.awt.Color(255, 255, 255));
+        setBounds(new java.awt.Rectangle(0, 0, 1366, 768));
+        setName("adminModFrame"); // NOI18N
+        setPreferredSize(new java.awt.Dimension(1366, 768));
+        getContentPane().setLayout(null);
+
+        adminModPanel.setBackground(new java.awt.Color(255, 255, 255));
+        adminModPanel.setPreferredSize(new java.awt.Dimension(1366, 768));
+        adminModPanel.setLayout(null);
+
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/teloTengo.png"))); // NOI18N
+        adminModPanel.add(logo);
+        logo.setBounds(60, 30, 400, 130);
+
+        Label_Gestion.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 24)); // NOI18N
+        Label_Gestion.setForeground(new java.awt.Color(255, 153, 0));
+        Label_Gestion.setText("Gestión de Usuarios");
+        adminModPanel.add(Label_Gestion);
+        Label_Gestion.setBounds(372, 230, 230, 32);
+
+        updateUser_Button.setBackground(new java.awt.Color(255, 255, 255));
+        updateUser_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        updateUser_Button.setForeground(new java.awt.Color(0, 0, 153));
+        updateUser_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/buttonG.png"))); // NOI18N
+        updateUser_Button.setText("Actualizar");
+        updateUser_Button.setBorder(null);
+        updateUser_Button.setContentAreaFilled(false);
+        updateUser_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        updateUser_Button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        updateUser_Button.setMargin(new java.awt.Insets(10, 14, 10, 14));
+        adminModPanel.add(updateUser_Button);
+        updateUser_Button.setBounds(770, 320, 160, 157);
+
+        delUser_Button.setBackground(new java.awt.Color(255, 255, 255));
+        delUser_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        delUser_Button.setForeground(new java.awt.Color(0, 0, 153));
+        delUser_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/buttonG.png"))); // NOI18N
+        delUser_Button.setText("Eliminar");
+        delUser_Button.setBorder(null);
+        delUser_Button.setContentAreaFilled(false);
+        delUser_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        delUser_Button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        delUser_Button.setMargin(new java.awt.Insets(10, 14, 10, 14));
+        adminModPanel.add(delUser_Button);
+        delUser_Button.setBounds(940, 320, 160, 157);
+
+        regUser_Button.setBackground(new java.awt.Color(255, 255, 255));
+        regUser_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        regUser_Button.setForeground(new java.awt.Color(0, 0, 153));
+        regUser_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/buttonG.png"))); // NOI18N
+        regUser_Button.setText("Registrar");
+        regUser_Button.setBorder(null);
+        regUser_Button.setBorderPainted(false);
+        regUser_Button.setContentAreaFilled(false);
+        regUser_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        regUser_Button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        regUser_Button.setMargin(new java.awt.Insets(10, 14, 10, 14));
+        regUser_Button.setRequestFocusEnabled(false);
+        regUser_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regUser_ButtonActionPerformed(evt);
+            }
+        });
+        adminModPanel.add(regUser_Button);
+        regUser_Button.setBounds(430, 320, 160, 160);
+
+        conUser_Button.setBackground(new java.awt.Color(255, 255, 255));
+        conUser_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        conUser_Button.setForeground(new java.awt.Color(0, 0, 153));
+        conUser_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/buttonG.png"))); // NOI18N
+        conUser_Button.setText("Consultar");
+        conUser_Button.setBorder(null);
+        conUser_Button.setContentAreaFilled(false);
+        conUser_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        conUser_Button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        conUser_Button.setMargin(new java.awt.Insets(10, 14, 10, 14));
+        conUser_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                conUser_ButtonActionPerformed(evt);
+            }
+        });
+        adminModPanel.add(conUser_Button);
+        conUser_Button.setBounds(600, 320, 160, 160);
+
+        Button_Back.setBackground(new java.awt.Color(255, 255, 255));
+        Button_Back.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        Button_Back.setForeground(new java.awt.Color(255, 153, 51));
+        Button_Back.setText("Volver");
+        Button_Back.setBorderPainted(false);
+        Button_Back.setContentAreaFilled(false);
+        Button_Back.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Button_Back.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Button_Back.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        Button_Back.setMargin(new java.awt.Insets(2, 14, 2, 0));
+        Button_Back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button_BackActionPerformed(evt);
+            }
+        });
+        adminModPanel.add(Button_Back);
+        Button_Back.setBounds(950, 500, 150, 20);
+
+        getContentPane().add(adminModPanel);
+        adminModPanel.setBounds(1, -2, 1366, 768);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void conUser_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_conUser_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_conUser_ButtonActionPerformed
+
+    private void regUser_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regUser_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_regUser_ButtonActionPerformed
+
+    private void Button_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_BackActionPerformed
+        // TODO add your handling code here:
+        Principal principal = new Principal(false,"");
+        principal.setVisible(true);
+        this.dispose();
+        
+    }//GEN-LAST:event_Button_BackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -87,5 +215,15 @@ public class AdminModWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Button_Back;
+    private javax.swing.JLabel Label_Gestion;
+    private javax.swing.JPanel adminModPanel;
+    private javax.swing.JButton conUser_Button;
+    private javax.swing.JButton delUser_Button;
+    private javax.swing.JLabel logo;
+    private javax.swing.JButton regUser_Button;
+    private javax.swing.JButton updateUser_Button;
     // End of variables declaration//GEN-END:variables
+    private String rutaButton = "src\\Resources\\button.png";
+
 }
