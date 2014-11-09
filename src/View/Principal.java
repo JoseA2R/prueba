@@ -52,7 +52,6 @@ public class Principal extends javax.swing.JFrame {
         setTitle("teloTengo Home");
         setMaximizedBounds(new java.awt.Rectangle(0, 0, 1366, 768));
         setName("principal"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(1366, 768));
 
         principalPanel.setBackground(new java.awt.Color(255, 255, 255));
         principalPanel.setAutoscrolls(true);
@@ -115,7 +114,7 @@ public class Principal extends javax.swing.JFrame {
         gridBagConstraints.ipadx = 17;
         gridBagConstraints.ipady = -2;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(370, 60, 35, 0);
+        gridBagConstraints.insets = new java.awt.Insets(320, 60, 85, 0);
         principalPanel.add(adminMod_Button, gridBagConstraints);
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/teloTengo.png"))); // NOI18N

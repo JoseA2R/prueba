@@ -43,12 +43,6 @@ public class AdminModWindow extends javax.swing.JFrame {
         Label_Gestion = new javax.swing.JLabel();
         updateUser_Button = new javax.swing.JButton();
         delUser_Button = new javax.swing.JButton();
-        ImageIcon icon = new ImageIcon(rutaButton);
-        Image img = icon.getImage();
-        Image newImg = img.getScaledInstance(400, 400, java.awt.Image.SCALE_SMOOTH);
-        ImageIcon newIcon = new ImageIcon(newImg);
-        this.regUser_Button.setIcon(newIcon);
-        this.regUser_Button.setSize(400, 400);
         regUser_Button = new javax.swing.JButton();
         conUser_Button = new javax.swing.JButton();
         Button_Back = new javax.swing.JButton();

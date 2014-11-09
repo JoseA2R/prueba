@@ -181,9 +181,6 @@
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="regUser_ButtonActionPerformed"/>
           </Events>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_CreateCodePre" type="java.lang.String" value="ImageIcon icon = new ImageIcon(rutaButton);&#xa;Image img = icon.getImage();&#xa;Image newImg = img.getScaledInstance(400, 400, java.awt.Image.SCALE_SMOOTH);&#xa;ImageIcon newIcon = new ImageIcon(newImg);&#xa;this.regUser_Button.setIcon(newIcon);&#xa;this.regUser_Button.setSize(400, 400);"/>
-          </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="430" y="320" width="160" height="160"/>

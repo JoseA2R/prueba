@@ -28,21 +28,152 @@ public class InventoryWindow extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        inventoryModPanel = new javax.swing.JPanel();
+        logo = new javax.swing.JLabel();
+        Label_Gestion = new javax.swing.JLabel();
+        updateProduct_Button = new javax.swing.JButton();
+        delProduct_Button = new javax.swing.JButton();
+        regProduct_Button = new javax.swing.JButton();
+        conProduct_Button = new javax.swing.JButton();
+        Button_Back = new javax.swing.JButton();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        inventoryModPanel.setBackground(new java.awt.Color(255, 255, 255));
+        inventoryModPanel.setPreferredSize(new java.awt.Dimension(1366, 768));
+        inventoryModPanel.setLayout(null);
+
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/teloTengo.png"))); // NOI18N
+        inventoryModPanel.add(logo);
+        logo.setBounds(60, 30, 400, 130);
+
+        Label_Gestion.setFont(new java.awt.Font("Microsoft YaHei UI", 0, 24)); // NOI18N
+        Label_Gestion.setForeground(new java.awt.Color(255, 153, 0));
+        Label_Gestion.setText("Gestión de Productos");
+        inventoryModPanel.add(Label_Gestion);
+        Label_Gestion.setBounds(372, 230, 260, 32);
+
+        updateProduct_Button.setBackground(new java.awt.Color(255, 255, 255));
+        updateProduct_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        updateProduct_Button.setForeground(new java.awt.Color(0, 0, 153));
+        updateProduct_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/buttonG.png"))); // NOI18N
+        updateProduct_Button.setText("Actualizar");
+        updateProduct_Button.setBorder(null);
+        updateProduct_Button.setContentAreaFilled(false);
+        updateProduct_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        updateProduct_Button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        updateProduct_Button.setMargin(new java.awt.Insets(10, 14, 10, 14));
+        inventoryModPanel.add(updateProduct_Button);
+        updateProduct_Button.setBounds(770, 320, 160, 157);
+
+        delProduct_Button.setBackground(new java.awt.Color(255, 255, 255));
+        delProduct_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        delProduct_Button.setForeground(new java.awt.Color(0, 0, 153));
+        delProduct_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/buttonG.png"))); // NOI18N
+        delProduct_Button.setText("Eliminar Producto");
+        delProduct_Button.setBorder(null);
+        delProduct_Button.setContentAreaFilled(false);
+        delProduct_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        delProduct_Button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        delProduct_Button.setMargin(new java.awt.Insets(10, 14, 10, 14));
+        inventoryModPanel.add(delProduct_Button);
+        delProduct_Button.setBounds(940, 320, 160, 157);
+
+        regProduct_Button.setBackground(new java.awt.Color(255, 255, 255));
+        regProduct_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        regProduct_Button.setForeground(new java.awt.Color(0, 0, 153));
+        regProduct_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/buttonG.png"))); // NOI18N
+        regProduct_Button.setText("Registrar Producto");
+        regProduct_Button.setBorder(null);
+        regProduct_Button.setBorderPainted(false);
+        regProduct_Button.setContentAreaFilled(false);
+        regProduct_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        regProduct_Button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        regProduct_Button.setMargin(new java.awt.Insets(10, 14, 10, 14));
+        regProduct_Button.setRequestFocusEnabled(false);
+        regProduct_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regProduct_ButtonActionPerformed(evt);
+            }
+        });
+        inventoryModPanel.add(regProduct_Button);
+        regProduct_Button.setBounds(430, 320, 160, 160);
+
+        conProduct_Button.setBackground(new java.awt.Color(255, 255, 255));
+        conProduct_Button.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        conProduct_Button.setForeground(new java.awt.Color(0, 0, 153));
+        conProduct_Button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Resources/buttonG.png"))); // NOI18N
+        conProduct_Button.setText("Consultar");
+        conProduct_Button.setBorder(null);
+        conProduct_Button.setContentAreaFilled(false);
+        conProduct_Button.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        conProduct_Button.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        conProduct_Button.setMargin(new java.awt.Insets(10, 14, 10, 14));
+        conProduct_Button.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                conProduct_ButtonActionPerformed(evt);
+            }
+        });
+        inventoryModPanel.add(conProduct_Button);
+        conProduct_Button.setBounds(600, 320, 160, 160);
+
+        Button_Back.setBackground(new java.awt.Color(255, 255, 255));
+        Button_Back.setFont(new java.awt.Font("Microsoft JhengHei UI", 1, 14)); // NOI18N
+        Button_Back.setForeground(new java.awt.Color(255, 153, 51));
+        Button_Back.setText("Volver");
+        Button_Back.setBorderPainted(false);
+        Button_Back.setContentAreaFilled(false);
+        Button_Back.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Button_Back.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        Button_Back.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        Button_Back.setMargin(new java.awt.Insets(2, 14, 2, 0));
+        Button_Back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Button_BackActionPerformed(evt);
+            }
+        });
+        inventoryModPanel.add(Button_Back);
+        Button_Back.setBounds(950, 500, 150, 20);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 1366, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(inventoryModPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGap(0, 768, Short.MAX_VALUE)
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(inventoryModPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void regProduct_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regProduct_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_regProduct_ButtonActionPerformed
+
+    private void conProduct_ButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_conProduct_ButtonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_conProduct_ButtonActionPerformed
+
+    private void Button_BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_BackActionPerformed
+        // TODO add your handling code here:
+        Principal principal = new Principal(false,"");
+        principal.setVisible(true);
+        this.dispose();
+
+    }//GEN-LAST:event_Button_BackActionPerformed
 
     /**
      * @param args the command line arguments
@@ -80,5 +211,15 @@ public class InventoryWindow extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Button_Back;
+    private javax.swing.JLabel Label_Gestion;
+    private javax.swing.JButton conProduct_Button;
+    private javax.swing.JButton delProduct_Button;
+    private javax.swing.JPanel inventoryModPanel;
+    private javax.swing.JLabel logo;
+    private javax.swing.JButton regProduct_Button;
+    private javax.swing.JButton updateProduct_Button;
     // End of variables declaration//GEN-END:variables
+private String rutaButton = "src\\Resources\\button.png";
+
 }
