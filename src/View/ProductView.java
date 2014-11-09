@@ -10,12 +10,12 @@ package View;
  *
  * @author LaMitologica
  */
-public class Product extends javax.swing.JPanel {
+public class ProductView extends javax.swing.JPanel {
 
     /**
      * Creates new form Product
      */
-    public Product() {
+    public ProductView() {
         initComponents();
     }
 

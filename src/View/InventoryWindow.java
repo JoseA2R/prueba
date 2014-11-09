@@ -6,6 +6,8 @@
 
 package View;
 
+import Controller.InventoryWindowController;
+
 /**
  *
  * @author LaMitologica
@@ -220,6 +222,7 @@ public class InventoryWindow extends javax.swing.JFrame {
     private javax.swing.JButton regProduct_Button;
     private javax.swing.JButton updateProduct_Button;
     // End of variables declaration//GEN-END:variables
-private String rutaButton = "src\\Resources\\button.png";
+    private String rutaButton = "src\\Resources\\button.png";
+    private InventoryWindowController controller = new InventoryWindowController();
 
 }

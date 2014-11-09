@@ -17,7 +17,7 @@ import javax.swing.filechooser.FileNameExtensionFilter;
  *
  * @author VRB
  */
-public class Register_Window extends javax.swing.JFrame {
+public class UserRegister_Window extends javax.swing.JFrame {
 
     /**
      * Creates new user from a register window
@@ -27,7 +27,7 @@ public class Register_Window extends javax.swing.JFrame {
     private final String defaultavatarpath= "src\\Resources\\DefaultAvatar.jpg";
     private static int rol;
     
-    public Register_Window(int rol) {        
+    public UserRegister_Window(int rol) {        
         this.rol=rol;
         initComponents();
         
@@ -429,20 +429,20 @@ public class Register_Window extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Register_Window.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UserRegister_Window.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Register_Window.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UserRegister_Window.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Register_Window.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UserRegister_Window.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Register_Window.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(UserRegister_Window.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Register_Window(rol).setVisible(true);
+                new UserRegister_Window(rol).setVisible(true);
             }
         });
     }

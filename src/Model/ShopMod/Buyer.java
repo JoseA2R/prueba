@@ -16,16 +16,19 @@ import java.util.Date;
 public class Buyer extends User{
     private Date birthDate;
     private String address;
+    private CreditCard cC;
 
-    public Buyer(Date birthDate, String address) {
+    public Buyer(Date birthDate, String address,CreditCard cC) {
         this.birthDate = birthDate;
         this.address = address;
+        this.cC = cC;
     }
 
-    public Buyer(Date birthDate, String address, String name, String lastName, String iD, String userName, String pass, String email, Date regDate, int rol) {
+    public Buyer(Date birthDate, String address,CreditCard cC, String name, String lastName, String iD, String userName, String pass, String email, Date regDate, int rol) {
         super(name, lastName, iD, userName, pass, email, regDate, rol);
         this.birthDate = birthDate;
         this.address = address;
+        this.cC = cC;
     }
 
     public Date getBirthDate() {
@@ -43,7 +46,13 @@ public class Buyer extends User{
     public void setAddress(String address) {
         this.address = address;
     }
-    
-    
-    
+
+    public CreditCard getcC() {
+        return cC;
+    }
+
+    public void setcC(CreditCard cC) {
+        this.cC = cC;
+    }
+     
 }

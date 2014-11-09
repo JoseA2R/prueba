@@ -242,7 +242,7 @@ public class LogWindow extends javax.swing.JFrame
 
     private void Button_RegisterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Button_RegisterActionPerformed
         // TODO add your handling code here:
-        Register_Window register = new Register_Window(rol);
+        UserRegister_Window register = new UserRegister_Window(rol);
         register.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_Button_RegisterActionPerformed
@@ -303,4 +303,5 @@ public class LogWindow extends javax.swing.JFrame
    InventoryWindow invWindow = new InventoryWindow(); 
    private static boolean signedIn; //valida si el usuario está logeado en el sistema
    private static int rol; //rol del usuario que se está logeando
+   private LogWindowController controller = new LogWindowController();
 }

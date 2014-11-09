@@ -6,6 +6,7 @@
 
 package View;
 
+import Controller.AdminWindowController;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
@@ -219,5 +220,6 @@ public class AdminModWindow extends javax.swing.JFrame {
     private javax.swing.JButton updateUser_Button;
     // End of variables declaration//GEN-END:variables
     private String rutaButton = "src\\Resources\\button.png";
+    private AdminWindowController controller = new AdminWindowController();
 
 }

@@ -6,16 +6,10 @@
 
 package Controller;
 
-import Model.InvMod.*;
-
 /**
  *
  * @author LaMitologica
  */
-public class InventoryWindowController {
+public class AdminWindowController {
     
-    public void regProduct(){}
-    public void updateProduct(){}
-    public void deleteProduct(){}
-    public void consultProduct(){}       
 }
